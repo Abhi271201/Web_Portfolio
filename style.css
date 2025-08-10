@@ -1,0 +1,123 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make footer stay at bottom */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #00796b;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c8e6c9;
+}
+
+/* Main content grows to push footer down */
+main {
+  flex: 1;
+}
+
+/* Section styling */
+section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Center header block */
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  color: #004d40;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.page-header .subtitle {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.page-header .author {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Centered button */
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Button matches header/nav color */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00796b; /* same as nav bar */
+  color: white !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004d40; /* darker on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  color: #607d8b;
+  border-top: 1px solid #ccc;
+  background-color: #00796b; /* match nav/header color */
+  color: white;
+  margin-top: 40px;
+}
